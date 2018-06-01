@@ -1,0 +1,5 @@
+<launch>
+  <machine name="node0" address="localhost" default="true" />
+  <machine name="node1" address="146.169.134.105" user="pi" password="dstl2018" env-loader="/opt/ros/kinetic/env.sh"/>
+  <node name="node1_streamer" machine="node1" pkg="signal_stream" type="stream.py" respawn='true' output="screen"/>
+</launch>
